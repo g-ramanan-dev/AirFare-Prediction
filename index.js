@@ -9,7 +9,7 @@ var auth = require("./routes/auth.js");
 var myTrips = require("./routes/myTrips/myFlights")
 var checkToken = require("./middleware/check-authToken");
 var faq = require('./routes/faqRoute')
-
+const port = process.env.PORT || 3000;
 
 app.use(
     bodyParser.urlencoded({
@@ -186,6 +186,6 @@ app.get("/adminlogout", function(req, res) {
     req.session.destroy();
     res.redirect("/faq");
 })
-app.listen(3000, function() {
+app.listen(port, function() {
     console.log("Listening on port 3000");
 });
