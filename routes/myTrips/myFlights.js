@@ -18,8 +18,8 @@ router.get('/checkout-session/:flightID', async(req, res) => {
      //2) Create the checkout session
     const session = await stripe.checkout.sessions.create({
         payment_method_types: ['card'],
-        success_url: 'http://localhost:3000/flightBookings',
-        cancel_url: 'http://localhost:3000/',
+        success_url: 'https://travelgenie.herokuapp.com/flightBookings',
+        cancel_url: 'https://travelgenie.herokuapp.com/',
        // customer_email: req.userData.username,
         client_reference_id: req.params.flightID,
         line_items: [
