@@ -38,9 +38,18 @@ $("#loginToYourAccount").on("click", () => {
 // })
 $("#signUpButton").on("click", () => {
     var signInData = {
+        fname: $("#firstname").val(),
+        lname: $("#lastname").val(),
         username: $("#signupUsername").val(),
+        email: $("#signupUsername").val(),
         password: $("#signupPassword").val(),
-        confirmPass: $("#passMatch").val()
+        confirmPass: $("#passMatch").val(),
+        gender: $("input[name=gender]:checked", "#form1").val(),
+        age: $("#age").val(),
+        phone: $("#phone").val(),
+        city: $("#city").val(),
+        state: $("#state").val(),
+        address: $("#address").val()
     };
     console.log(signInData);
     $.ajax({

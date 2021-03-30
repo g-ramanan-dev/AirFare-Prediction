@@ -20,8 +20,17 @@ router.post('/signup', function(req, res) { //auth route
                 } else {
                     if (req.body.password == req.body.confirmPass) {
                         var userData = {
+                            fname: req.body.fname,
+                            lname: req.body.lname,
+                            gender: req.body.gender,
+                            age: req.body.age,
                             username: req.body.username,
-                            password: hash
+                            email: req.body.username,
+                            password: hash,
+                            phone: req.body.phone,
+                            city: req.body.city,
+                            state: req.body.state,
+                            address: req.body.address
                         }
                         db.collection("users").insertOne(userData, (err, result) => {
                             if (err) throw err;
