@@ -12,11 +12,13 @@
 }
 
 div #back-img {
-    width: 1360px;
-    height: 600px;
+/*     width: 1360px;
+    height: 600px; */
     background: url('images/travel-palnner.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    min-height: 700px;
 }
 
 .head span {
