@@ -275,21 +275,19 @@ $("#submitBtn").on("click", function() {
     $.ajax({
         async: true,
         // "crossDomain": true,
-        url: "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsequotes/v1.0/IN/INR/en-IN/" +
-            originplace +
-            "/" +
-            destinationplace +
-            "/" +
-            outboundpartialdate +
-            "/" +
-            "?" +
-            inboundpartialdate,
+        url: "https://siddiq-such-flight-v1.p.rapidapi.com/search",
+        params: {
+    to:  destinationplace,
+    from: originplace,
+    'depart-date': outboundpartialdate,
+    'return-date': inboundpartialdate
+  },
+  headers: {
+    'X-RapidAPI-Host': 'siddiq-such-flight-v1.p.rapidapi.com',
+    'X-RapidAPI-Key': '2509815842msh76bbb894a739e5bp142426jsn288175e7e0e1'
+  },
         method: "GET",
         dataType: "json",
-        headers: {
-            "x-rapidapi-host": "skyscanner-skyscanner-flight-search-v1.p.rapidapi.com",
-            "x-rapidapi-key": "aab1dd7a83mshcdd221cc00a23bdp1d10c2jsn93c71141db3c"
-        },
         success: data => {
             $('#FlightResult').empty();
             console.log(data)
