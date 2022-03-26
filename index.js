@@ -21,7 +21,7 @@ app.use(express.static("public"));
 app.set("view engine", "hbs");
 app.use('/', faq)
 
-var url = "mongodb+srv://ram:ram@cluster0.vefxf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+var url = "mongodb+srv://ram:ram@cluster0.eztpg.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
 app.locals.db;
 
