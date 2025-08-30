@@ -45,7 +45,7 @@ Airline corporations use complex and dynamic strategies for pricing tickets, mak
 ---
 
 ## 🏗️ System Architecture  
-![Architecture Diagram](./images/slide_13_img_2.jpg)  
+![Architecture Diagram](./public/images/slide_13_img_2.jpg)  
 
 ---
 
@@ -67,30 +67,30 @@ Airline corporations use complex and dynamic strategies for pricing tickets, mak
 ## 🔑 Modules  
 
 1. **Authentication**  
-   ![Authentication](./images/slide_17_img_2.png)  
+   ![Authentication](./public/images/slide_17_img_2.png)  
    - User registration, login, and session management with JWT tokens.  
 
 2. **Price Prediction**  
-   ![Price Prediction](./images/slide_20_img_2.png)  
+   ![Price Prediction](./public/images/slide_20_img_2.png)  
    - Trained ML model (Random Forest Regressor + Adaptive Boosting).  
    - Hyperparameter tuning for higher accuracy (79% → 85%).  
 
 3. **Booking Flights**  
-   ![Booking Flights](./images/slide_22_img_2.png)  
+   ![Booking Flights](./public/images/slide_22_img_2.png)  
    - User selects source/destination and travel dates.  
    - System displays available flights (via APIs).  
    - Booking confirmation via payment gateway.  
 
 4. **Travelogue**  
-   ![Travelogue](./images/slide_24_img_2.png)  
+   ![Travelogue](./public/images/slide_24_img_2.png)  
    - Fetches and displays flights and categories from Skyscanner API.  
 
 5. **Profile Creation**  
-   ![Profile Creation](./images/slide_26_img_2.png)  
+   ![Profile Creation](./public/images/slide_26_img_2.png)  
    - Users can manage and update profiles.  
 
 6. **Support System**  
-   ![Support System](./images/slide_28_img_2.png)  
+   ![Support System](./public/images/slide_28_img_2.png)  
    - Email support + FAQ for common queries.  
 
 ---
@@ -117,7 +117,7 @@ Airline corporations use complex and dynamic strategies for pricing tickets, mak
 ---
 
 ## 🙌 Contributors  
-- **G. Ramanan**   
-- **R. Prakash** 
+- **G. Ramanan**  
+- **R. Prakash**
 - **Dr. L. Sherly Pushpa Annabel**  
 - **S. Sreenidhi**  
